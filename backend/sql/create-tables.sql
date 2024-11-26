@@ -1,3 +1,7 @@
+-- Criando a role postgres
+CREATE ROLE postgres WITH LOGIN SUPERUSER CREATEDB CREATEROLE INHERIT;
+
+
 -- Criando a tabela Driver
 CREATE TABLE Driver (
     id SERIAL PRIMARY KEY,

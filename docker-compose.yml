@@ -13,11 +13,17 @@ services:
     networks:
       - app-network
     depends_on:
-      - postgres-db  # O backend depende do banco de dados
+      postgres-db:
+        condition: service_healthy  # O backend depende do banco de dados
 
   # PostgreSQL Database Service
   postgres-db:
     image: postgres:latest  # Usando imagem oficial do PostgreSQL
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
     container_name: postgres-db
     environment:
       POSTGRES_USER: user
