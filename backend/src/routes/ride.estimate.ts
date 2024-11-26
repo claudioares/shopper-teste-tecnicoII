@@ -2,10 +2,12 @@ import { Router } from "express";
 import { Client } from "@googlemaps/google-maps-services-js";
 import axios from "axios";
 import pool from "../db/config";
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const createRouterEstimate = Router();
 const googleMapsClient = new Client();
-const GOOGLE_API_KEY = "AIzaSyDOgNLmLRUQDvRJrSnRbr_5wtUn1jMCjqE";
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 
 
 createRouterEstimate.post("/ride/estimate", async (req, res) => {
@@ -28,11 +30,11 @@ createRouterEstimate.post("/ride/estimate", async (req, res) => {
     try {
         
         const originGeo = await googleMapsClient.geocode({
-            params: { address: origin, key: GOOGLE_API_KEY }
+            params: { address: origin, key: GOOGLE_API_KEY || '' }
         });
 
         const destinationGeo = await googleMapsClient.geocode({
-            params: { address: destination, key: GOOGLE_API_KEY }
+            params: { address: destination, key: GOOGLE_API_KEY || '' }
         });
 
         const originCoordinates = originGeo.data.results[0].geometry.location;

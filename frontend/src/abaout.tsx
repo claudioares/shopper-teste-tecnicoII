@@ -49,7 +49,7 @@ export function About ()  {
                 O código-fonte completo do projeto está disponível no GitHub. Você pode acessar e verificar todos os detalhes da implementação através do link abaixo:
             </p>
             <a
-                href="https://github.com/seu_usuario/seu_repositorio"
+                href="https://github.com/claudioares/shopper-teste-tecnicoII"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"

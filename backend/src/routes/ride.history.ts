@@ -43,7 +43,7 @@ rideHistory.get("/ride/:customer_id", async (req, res) => {
 
         const formattedRides = ridesResult.rows.map((ride) => ({
             id: ride.id,
-            date: ride.date, // Corrigido para usar o alias "date" corretamente
+            date: ride.date,
             origin: ride.origin,
             destination: ride.destination,
             distance: ride.distance,

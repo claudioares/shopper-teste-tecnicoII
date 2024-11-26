@@ -120,7 +120,7 @@ export function HistoryPage () {
                     )
                 ) : (
                   <div className="w-full h-screen flex justify-center items-center">
-                    <p>Nenhum registro encontrado.</p>
+                    <p className="text-white">Nenhum registro encontrado.</p>
                   </div>
                 )}
                 </>

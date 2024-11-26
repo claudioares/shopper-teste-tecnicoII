@@ -52,7 +52,7 @@ export function DriverList() {
           ))}
         </div>
       : (
-        <p>Carregando...</p>
+        <p className="text-white">Carregando...</p>
       )}
     </>
   );
