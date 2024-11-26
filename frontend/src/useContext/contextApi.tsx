@@ -1,5 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { api } from "@/api/axios.config";
 import { ReactNode, createContext, useEffect, useState } from "react";

@@ -6,7 +6,7 @@ export function Footer () {
                 <footer className="bg-green-700 text-white py-10">
                     <div className="container mx-auto px-6">
                         <div className="flex flex-wrap justify-between items-start gap-6">
-                        {/* Logo e descrição */}
+                        
                         <div className="w-full md:w-1/3">
                             <h2 className="text-2xl font-bold">Shopper Rides</h2>
                             <p className="mt-2 text-sm">
@@ -14,7 +14,6 @@ export function Footer () {
                             </p>
                         </div>
 
-                        {/* Links úteis */}
                         <div className="w-full md:w-1/3">
                             <h3 className="text-lg font-semibold mb-4">Links Úteis</h3>
                             <ul className="space-y-2 text-sm">
@@ -25,7 +24,6 @@ export function Footer () {
                             </ul>
                         </div>
 
-                        {/* Redes sociais */}
                         <div className="w-full md:w-1/3">
                             <h3 className="text-lg font-semibold mb-4">Siga-nos</h3>
                             <div className="flex space-x-4">
@@ -57,7 +55,6 @@ export function Footer () {
                         </div>
                         </div>
 
-                        {/* Copyright */}
                         <div className="mt-10 text-center text-sm text-gray-300">
                         &copy; {new Date().getFullYear()} Shopper Rides. Todos os direitos reservados.
                         </div>

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { DirectionsService, DirectionsRenderer, GoogleMap, LoadScript, Marker, Polyline } from "@react-google-maps/api";
 import { useCallback, useMemo, useState, useEffect, useContext } from "react";
 import { ContextApi } from "@/useContext/contextApi";
@@ -45,7 +44,6 @@ export function MapPage() {
 
 
     useEffect(() => {
-        // Panning o mapa para `origin` ou `destination` quando alterado
         if (map && origin) {
             map.panTo(origin);
         }

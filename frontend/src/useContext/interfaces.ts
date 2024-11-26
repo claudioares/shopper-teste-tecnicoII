@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface IContextProps {
     [x: string]: any
 };
@@ -19,19 +18,19 @@ export interface IResponseApiProps {
         latitude: number;
         longitude: number;
     };
-    distance: number; // Distância em quilômetros
-    duration: string; // Duração da viagem em minutos ou como string formatada
-    options: Array<any>; // Pode ser especificado se o formato exato for conhecido
+    distance: number;
+    duration: string; 
+    options: Array<any>;
     origin: {
         latitude: number;
         longitude: number;
     };
     routeResponse: {
         routes: Array<{
-            distanceMeters: number; // Distância em metros
-            duration: string; // Duração da rota em segundos (como string formatada, ex: "1524s")
+            distanceMeters: number;
+            duration: string; 
             polyline: {
-                encodedPolyline: string; // Linha poligonal codificada da rota
+                encodedPolyline: string;
             };
         }>;
     };

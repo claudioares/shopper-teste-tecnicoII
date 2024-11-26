@@ -5,7 +5,6 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import { HistoryPage } from "@/History";
 import { About } from "@/abaout";
 
-// Layout Wrapper
 const Layout = () => {
   return (
     <>

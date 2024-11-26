@@ -5,7 +5,6 @@ export function Header() {
 
       <header className="bg-sky-950 shadow-md">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
-          {/* Logo ou Título */}
           <div className="flex items-center gap-2">
             <img
               src={logo}
@@ -14,7 +13,6 @@ export function Header() {
             />
           </div>
 
-          {/* Navegação */}
           <nav className="hidden md:flex gap-6 text-white">
             <a href="/" className="hover:text-green-400 transition">
               Home

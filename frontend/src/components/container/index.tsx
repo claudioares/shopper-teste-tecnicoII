@@ -1,5 +1,5 @@
 interface ContainerProps {
-  children: React.ReactNode; // Permite envolver qualquer conteúdo
+  children: React.ReactNode; 
 }
 
 export function Container({ children }: ContainerProps) {
