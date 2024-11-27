@@ -28,10 +28,10 @@ function App() {
               </div>}
           </SubContainer>
 
-          <MapPage />
         </div>
       </div>
       </Container>
+      <MapPage />
     </>
   )
 }
