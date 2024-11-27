@@ -49,7 +49,6 @@ export function HistoryPage () {
           return updatedRides;
         });
 
-        console.log(rides)
         return
       } catch (error) {
           return console.log(error);
@@ -72,14 +71,20 @@ export function HistoryPage () {
   return (
       <>
         <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-4 pt-4 justify-center items-center">
-          <div className="w-full flex justify-between items-center px-10">
+          <div className={`
+              w-full flex flex-col justify-between items-center px-10
+              md:flex-row
+            `}>
             <h1 className="text-center text-2xl font-semibold">Histórico de viagens</h1>
             <div className="flex justify-end">
               <Button labelName={"Filtrar"} type="submit"/>
             </div>
           </div>
           <SubContainer>
-            <div className="w-full flex flex-1 justify-between items-center text-black">
+            <div className={`
+                w-full flex flex-col flex-1 justify-between items-center text-black
+                md:flex-row
+              `}>
               <section>
                 <Label htmlFor={"userid"} >Id de usuário</Label>
                 <Input 
@@ -100,7 +105,10 @@ export function HistoryPage () {
               </section>
             </div>
 
-            <section className="w-full h-screen flex flex-wrap gap-4 justify-center">
+            <section className={`
+                w-full flex flex-wrap gap-4 justify-center items-center
+                xl:min-h-screen
+              `}>
                <>
                   {rides[0].rides.length > 0 ? (
                     rides.map((customerRide: ICustomerRides) =>
@@ -119,7 +127,7 @@ export function HistoryPage () {
                         ))
                     )
                 ) : (
-                  <div className="w-full h-screen flex justify-center items-center">
+                  <div className="w-full h-auto sm:h-[35rem] hl:h-screen flex justify-center items-center">
                     <p className="text-white">Nenhum registro encontrado.</p>
                   </div>
                 )}

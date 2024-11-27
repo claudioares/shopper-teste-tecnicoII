@@ -81,3 +81,7 @@
   font-size: larger;
   margin-top: -30px;
 }
+
+body {
+  min-height: 100vh;
+}

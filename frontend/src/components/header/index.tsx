@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import logo from "@/assets/logo.svg";
+import { HeaderMobile } from './mobile';
 export function Header() {
   const location = useLocation().pathname;
 
@@ -25,6 +26,10 @@ export function Header() {
             <a href="about" className={`hover:text-green-400 transition ${location === '/about' && "text-green-500"}`}>
               Sobre
             </a>
+          </nav>
+
+          <nav className="flex md:hidden gap-6 text-white">
+            <HeaderMobile />
           </nav>
         </div>
       </header>

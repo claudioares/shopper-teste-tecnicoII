@@ -11,7 +11,8 @@ export function Button({ labelName, type, funClick }: ButtonPropsTypes) {
       onClick={funClick}
       className={`
         bg-green-600 
-        text-white 
+        text-white
+        w-52
         px-8 
         py-2 
         rounded-lg 
@@ -21,9 +22,13 @@ export function Button({ labelName, type, funClick }: ButtonPropsTypes) {
         transition 
         duration-150 
         ease-in-out
+
+        sm:w-auto
       `}
     >
-      {labelName}
+      
+      <p className={`text-xs sm:text-sm`}>{labelName}</p>
+      
     </button>
   );
 }

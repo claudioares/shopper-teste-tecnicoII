@@ -9,8 +9,8 @@ export function SubContainer ({children, variant}:SubContainerProps) {
         <>
             <div className={`
                 control_scroll flex flex-col gap-4 
-                justify-between w-full min-h-96 py-6 
-                px-6  bg-sky-950 ${variant}
+                w-full h-auto py-6 
+                md:px-6  bg-sky-950 ${variant}
             `}>
                 {children}
             </div>

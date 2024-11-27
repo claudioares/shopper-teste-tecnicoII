@@ -23,7 +23,10 @@ export function Form ({func}:IForm) {
         <>
             <form 
                 onSubmit={handleSubmit(onSubmit)}
-                className="flex w-full h-auto py-6 px-6 justify-evenly items-center bg-sky-950"
+                className={`
+                    flex flex-col w-full h-auto py-6 px-6 justify-evenly items-center bg-sky-950
+                    md:flex-row
+                `}
             >
                 <div className="flex flex-1 flex-col gap-1">
                     <div className="flex flex-col h-20 gap-1">

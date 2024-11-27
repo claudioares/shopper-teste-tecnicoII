@@ -28,22 +28,6 @@ export function About ()  {
                 <li>Git (para controle de versão)</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-6 mb-4">Como Usar</h2>
-            <p className="text-lg text-gray-800 mb-4">
-                O projeto está disponível no GitHub e pode ser facilmente executado localmente ou em qualquer ambiente que suporte Docker.
-                Para rodar a aplicação, basta clonar o repositório, configurar as variáveis de ambiente, e executar os comandos:
-            </p>
-            <pre className="bg-gray-100 p-4 rounded-md">
-                {`# Clonar o repositório
-                git clone <URL_DO_REPOSITORIO>
-
-                # Navegar para o diretório do projeto
-                cd <NOME_DO_PROJETO>
-
-                # Subir a aplicação com Docker Compose
-                docker-compose up`}
-            </pre>
-
             <h2 className="text-2xl font-semibold mt-6 mb-4">Repositório no GitHub</h2>
             <p className="text-lg text-gray-800 mb-4">
                 O código-fonte completo do projeto está disponível no GitHub. Você pode acessar e verificar todos os detalhes da implementação através do link abaixo:
