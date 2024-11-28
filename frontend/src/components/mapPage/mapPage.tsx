@@ -49,6 +49,7 @@ export function MapPage() {
         }
     }, [map, origin]);
 
+
     return (
         <div className="w-full h-96">
             <LoadScript
